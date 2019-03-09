@@ -1,0 +1,6 @@
+services:
+    _defaults:
+        autoconfigure: true
+
+    SylvainDeloux\SymfonyQuickwins\:
+        resource: '../src'

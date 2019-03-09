@@ -6,6 +6,8 @@
     "keywords": [],
     "require": {
         "php": "^7",
+        "symfony/config": ">=3.3",
+        "symfony/dependency-injection": ">3.3",
         "symfony/http-kernel": ">=3.3"
     },
     "license": "MIT",
