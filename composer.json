@@ -1,0 +1,23 @@
+{
+    "name": "sylvaindeloux/symfony-quickwins",
+    "description": "Some quickwins for Symfony.",
+    "type": "symfony-bundle",
+    "homepage": "https://github.com/sylvaindeloux/symfony-quickwins",
+    "keywords": [],
+    "require": {
+        "php": "^7",
+        "symfony/http-kernel": ">=3.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sylvain Deloux",
+            "email": "github-symfony-quickwins@eax.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SylvainDeloux\\SymfonyQuickwins\\" : "src/"
+        }
+    }
+}
