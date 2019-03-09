@@ -6,9 +6,11 @@
     "keywords": [],
     "require": {
         "php": "^7",
+        "ext-intl": "*",
         "symfony/config": ">=3.3",
         "symfony/dependency-injection": ">3.3",
-        "symfony/http-kernel": ">=3.3"
+        "symfony/http-kernel": ">=3.3",
+        "twig/twig": "^2"
     },
     "license": "MIT",
     "authors": [
