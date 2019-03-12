@@ -14,13 +14,13 @@ class JsonExtension extends AbstractExtension
         );
     }
 
-    public function formatJson(string $json = null)
+    public function formatJson($data = null)
     {
-        if (!$json) {
+        if (!$data) {
             return null;
         }
 
-        $array = json_decode($json);
+        $array = is_array($data) ? $data : json_decode($data);
 
         return json_encode($array, JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
     }
