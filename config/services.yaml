@@ -1,6 +1,7 @@
 services:
     _defaults:
         autoconfigure: true
+        autowire: true
 
     SylvainDeloux\SymfonyQuickwins\:
         resource: '../src'

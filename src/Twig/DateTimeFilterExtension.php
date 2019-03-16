@@ -2,6 +2,7 @@
 
 namespace SylvainDeloux\SymfonyQuickwins\Twig;
 
+use SylvainDeloux\SymfonyQuickwins\Helper\DateTimeHelper;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
 
@@ -10,11 +11,11 @@ class DateTimeFilterExtension extends AbstractExtension
     const FORMAT_SHORT = 'short';
     const FORMAT_LONG = 'long';
 
-    protected $locale;
+    protected $dateTimeHelper;
 
-    public function __construct()
+    public function __construct(DateTimeHelper $dateTimeHelper)
     {
-        $this->locale = \Locale::getDefault();
+        $this->dateTimeHelper = $dateTimeHelper;
     }
 
     public function getFilters()
@@ -26,25 +27,19 @@ class DateTimeFilterExtension extends AbstractExtension
         );
     }
 
-    public function localizeDate(\DateTime $date, string $locale = null, string $format = null): string
+    public function localizeDate($data, string $locale = null, string $format = null): string
     {
-        $formatter = new \IntlDateFormatter($locale ?? $this->locale, $this->resolveFormat($format), \IntlDateFormatter::NONE);
-
-        return $formatter->format($date);
+        return $this->dateTimeHelper->localize($data, $locale, $this->resolveFormat($format));
     }
 
-    public function localizeTime(\DateTime $date, string $locale = null, string $format = null): string
+    public function localizeTime($data, string $locale = null, string $format = null): string
     {
-        $formatter = new \IntlDateFormatter($locale ?? $this->locale, \IntlDateFormatter::NONE, $this->resolveFormat($format));
-
-        return $formatter->format($date);
+        return $this->dateTimeHelper->localize($data, $locale, \IntlDateFormatter::NONE, $this->resolveFormat($format));
     }
 
-    public function localizeDateTime(\DateTime $date, string $locale = null, string $format = null): string
+    public function localizeDateTime($data, string $locale = null, string $format = null): string
     {
-        $formatter = new \IntlDateFormatter($locale ?? $this->locale, $this->resolveFormat($format), $this->resolveFormat($format));
-
-        return $formatter->format($date);
+        return $this->dateTimeHelper->localize($data, $locale, $this->resolveFormat($format), $this->resolveFormat($format));
     }
 
     protected function resolveFormat(string $format = null): int
