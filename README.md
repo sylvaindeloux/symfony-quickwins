@@ -6,6 +6,10 @@ Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 Changelog
 ---------
 
+**0.3**
+
+* Added TmpFile handler
+
 **0.2**
 
 * Added JSON Twig extension
