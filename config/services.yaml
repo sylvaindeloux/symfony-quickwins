@@ -5,3 +5,6 @@ services:
 
     SylvainDeloux\SymfonyQuickwins\:
         resource: '../src'
+
+    SylvainDeloux\SymfonyQuickwins\Storage\TmpFile:
+        autowire: false
