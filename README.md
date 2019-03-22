@@ -1,6 +1,8 @@
 Symfony Quickwins
 =================
 
+[![Build Status](https://travis-ci.org/sylvaindeloux/symfony-quickwins.svg?branch=master)](https://travis-ci.org/sylvaindeloux/symfony-quickwins)
+
 Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 
 *Tests & documentations are coming.*
