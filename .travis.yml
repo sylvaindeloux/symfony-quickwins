@@ -9,3 +9,6 @@ php:
 cache:
     directories:
         - $HOME/.composer/cache/files
+
+install:
+    - composer update
