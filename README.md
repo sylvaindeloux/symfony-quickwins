@@ -3,6 +3,8 @@ Symfony Quickwins
 
 Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 
+*Tests & documentations are coming.*
+
 Changelog
 ---------
 
