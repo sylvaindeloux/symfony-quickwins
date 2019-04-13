@@ -10,6 +10,10 @@ Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 Changelog
 ---------
 
+**0.5**
+
+* Added RandomHelper
+
 **0.4**
 
 * Added var Twig extension
