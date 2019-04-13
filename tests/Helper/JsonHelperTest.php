@@ -2,7 +2,9 @@
 
 namespace SylvainDeloux\SymfonyQuickwins\Helper;
 
-class JsonHelperTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class JsonHelperTest extends TestCase
 {
     /**
      * @covers \SylvainDeloux\SymfonyQuickwins\Helper\JsonHelper::isJson()

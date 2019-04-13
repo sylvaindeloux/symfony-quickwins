@@ -12,3 +12,5 @@ cache:
 
 install:
     - composer update
+
+script: ./vendor/bin/phpunit
