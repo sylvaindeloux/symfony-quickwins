@@ -4,7 +4,7 @@ namespace SylvainDeloux\SymfonyQuickwins\Helper;
 
 class RandomHelper
 {
-    public static function generateToken()
+    public static function generateToken(): string
     {
         if (@file_exists('/dev/urandom')) {
             $randomData = file_get_contents('/dev/urandom', false, null, 0, 100);
