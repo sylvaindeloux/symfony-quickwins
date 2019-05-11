@@ -13,6 +13,7 @@ Changelog
 **0.7**
 
 * Added CaseHelper
+* Require now PHP >= 7.1
 
 **0.6**
 
