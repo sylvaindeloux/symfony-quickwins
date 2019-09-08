@@ -8,6 +8,7 @@
         "php": "^7.1",
         "ext-intl": "*",
         "ext-json": "*",
+        "ext-mbstring": "*",
         "symfony/config": ">=3.3",
         "symfony/dependency-injection": ">3.3",
         "symfony/http-foundation": ">=3.3",

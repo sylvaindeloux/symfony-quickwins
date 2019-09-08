@@ -10,6 +10,10 @@ Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 Changelog
 ---------
 
+**0.8**
+
+* Added StringHelper
+
 **0.7**
 
 * Added CaseHelper
