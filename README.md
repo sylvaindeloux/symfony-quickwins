@@ -10,6 +10,10 @@ Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 Changelog
 ---------
 
+**0.10**
+
+* Added FileSizeHelper
+
 **0.9**
 
 * Added BaseCommand
