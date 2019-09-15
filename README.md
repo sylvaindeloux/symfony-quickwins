@@ -13,6 +13,7 @@ Changelog
 **0.10**
 
 * Added FileSizeHelper
+* Added String Twig extension
 
 **0.9**
 
