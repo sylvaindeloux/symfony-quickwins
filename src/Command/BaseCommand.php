@@ -56,6 +56,10 @@ abstract class BaseCommand extends Command
 
     public function askForUserConfirmation(string $message, bool $defaultReply = true): bool
     {
+        if (!$this->input->isInteractive()) {
+            return $defaultReply;
+        }
+
         $choices = $defaultReply ? '[Y/n]' : '[y/N]';
 
         $question = new ConfirmationQuestion(sprintf('<comment>%s</comment> %s ', $message, $choices), $defaultReply);
