@@ -10,4 +10,12 @@ abstract class UrlHelper
 
         return 'https' === $url['scheme'];
     }
+
+    public static function isSameDomain(string $url1, string $url2): bool
+    {
+        $url1Data = parse_url($url1);
+        $url2Data = parse_url($url2);
+
+        return $url1Data['host'] === $url2Data['host'];
+    }
 }
