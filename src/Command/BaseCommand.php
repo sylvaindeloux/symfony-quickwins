@@ -27,7 +27,7 @@ abstract class BaseCommand extends Command
         $this->output = $output;
 
         $store = new Lock\Store\FlockStore(sys_get_temp_dir());
-        $factory = new Lock\Factory($store);
+        $factory = class_exists(Lock\LockFactory::class) ? new Lock\LockFactory($store) : new Lock\Factory($store); // BC with symfony/lock < 5
         $lock = $factory->createLock($this->getName());
 
         if ($lock->acquire()) {
@@ -38,6 +38,8 @@ abstract class BaseCommand extends Command
         } else {
             $output->writeln('Command is locked.');
         }
+
+        return 0;
     }
 
     public function askForUserInput(string $message, bool $isHidden = false): ?string
