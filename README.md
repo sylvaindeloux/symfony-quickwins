@@ -10,6 +10,10 @@ Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 Changelog
 ---------
 
+**0.12**
+
+* Symfony 5 + PHP 7.4 support
+
 **0.11**
 
 * Added UrlHelper
