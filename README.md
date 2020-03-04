@@ -10,6 +10,10 @@ Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 Changelog
 ---------
 
+**0.13**
+
+* Twig 3 support
+
 **0.12**
 
 * Symfony 5 + PHP 7.4 support
