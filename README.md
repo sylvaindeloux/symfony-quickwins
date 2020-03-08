@@ -10,6 +10,10 @@ Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 Changelog
 ---------
 
+**0.14**
+
+* Added `PreExecuteInterface`
+
 **0.13**
 
 * Twig 3 support
@@ -20,33 +24,33 @@ Changelog
 
 **0.11**
 
-* Added UrlHelper
+* Added `UrlHelper`
 
 **0.10**
 
-* Added FileSizeHelper
+* Added `FileSizeHelper`
 * Added String Twig extension
 
 **0.9**
 
-* Added BaseCommand
+* Added `BaseCommand`
 
 **0.8**
 
-* Added StringHelper
+* Added `StringHelper`
 
 **0.7**
 
-* Added CaseHelper
+* Added `CaseHelper`
 * Require now PHP >= 7.1
 
 **0.6**
 
-* Added JsonHelper
+* Added `JsonHelper`
 
 **0.5**
 
-* Added RandomHelper
+* Added `RandomHelper`
 
 **0.4**
 
