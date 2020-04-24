@@ -1,7 +1,10 @@
 Symfony Quickwins
 =================
 
+[![Packagist](https://img.shields.io/packagist/v/sylvaindeloux/symfony-quickwins.svg)](https://packagist.org/packages/sylvaindeloux/symfony-quickwins)
+[![Packagist](https://img.shields.io/packagist/dt/sylvaindeloux/symfony-quickwins.svg)](https://packagist.org/packages/sylvaindeloux/symfony-quickwins)
 [![Build Status](https://travis-ci.org/sylvaindeloux/symfony-quickwins.svg?branch=master)](https://travis-ci.org/sylvaindeloux/symfony-quickwins)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sylvaindeloux/symfony-mailjet-transport/blob/master/LICENSE.md)
 
 Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 
@@ -9,6 +12,10 @@ Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 
 Changelog
 ---------
+
+**0.16**
+
+* Added `PlaceKittenProvider` (requires FakerBundle)
 
 **0.15**
 
