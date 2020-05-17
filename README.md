@@ -13,6 +13,15 @@ Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 Changelog
 ---------
 
+**0.17**
+
+* Added custom templates for `EasyAdminBundle` If you want to use them, you will need to declare the new Twig namespace:
+  ````yaml
+  twig:
+      paths:
+          '%kernel.project_dir%/vendor/sylvaindeloux/symfony-quickwins/templates': QuickwinsBundle
+  ````
+
 **0.16**
 
 * Added `PlaceKittenProvider` (requires FakerBundle)

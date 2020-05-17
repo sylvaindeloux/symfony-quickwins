@@ -1,0 +1,13 @@
+{# check if user has correct permission #}
+
+{% if action.permission is defined %}
+    {% set granted = is_granted(action.permission, item) %}
+{% elseif action.name is defined %}
+    {% set granted = is_granted(action.name, item) %}
+{% else %}
+    {% set granted = false %}
+{% endif %}
+
+{% if granted %}
+    {{ include('@EasyAdmin/default/action.html.twig') }}
+{% endif %}
