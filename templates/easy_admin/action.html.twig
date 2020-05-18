@@ -1,11 +1,11 @@
 {# check if user has correct permission #}
 
-{% if action.permission is defined %}
-    {% set granted = is_granted(action.permission, item) %}
-{% elseif action.name is defined %}
+{% if 'method' == action.type and action.name is defined %}
     {% set granted = is_granted(action.name, item) %}
+{% elseif 'route' == action.type and action.permission is defined %}
+    {% set granted = is_granted(action.permission, item) %}
 {% else %}
-    {% set granted = false %}
+    {% set granted = true %}
 {% endif %}
 
 {% if granted %}
