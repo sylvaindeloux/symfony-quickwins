@@ -12,4 +12,11 @@ abstract class StringHelper
 
         return rtrim(mb_strimwidth($value, 0, $limit, '', 'UTF-8')).$end;
     }
+
+    public static function decodeHtmlEmojis(string $value): string
+    {
+        return preg_replace_callback('/&#(.{5});&#(.{5});/', function(array $matches) {
+            return iconv('UTF-16BE', 'UTF-8', hex2bin(dechex($matches[1]).dechex($matches[2])));
+        }, $value);
+    }
 }
