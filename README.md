@@ -13,6 +13,11 @@ Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 Changelog
 ---------
 
+**0.18**
+
+* Added emoji decoder in `StringHelper`
+* Removed Twig from dependencies
+
 **0.17**
 
 * Added custom templates for `EasyAdminBundle` If you want to use them, you will need to declare the new Twig namespace:
