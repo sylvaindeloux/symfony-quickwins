@@ -13,6 +13,10 @@ Here are some useful quickwins for Symfony 3+ packaged as a bundle.
 Changelog
 ---------
 
+**0.19**
+
+* Added PHP 8 support
+
 **0.18**
 
 * Added emoji decoder in `StringHelper`
